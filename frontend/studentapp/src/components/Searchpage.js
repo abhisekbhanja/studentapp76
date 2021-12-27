@@ -15,7 +15,7 @@ export default function Searchpage() {
 
   const onSubmit = async (studentmark) => {
     await axios
-      .post(`https://student65.herokuapp.com/`, studentmark)
+      .post(`yoururl`, studentmark)
       .then((res) => {
         console.log("user details", res.data);
         setStudentmarks("");
