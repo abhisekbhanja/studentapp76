@@ -24,7 +24,7 @@ export default function Register() {
   const onSubmit = async (data) => {
     await axios
 
-      .post("https://student65.herokuapp.com/add", data)
+      .post("yoururl/add", data)
       .then((res) => {
         setRegistration(true);
         setRollnoexist("marks submitted successfully");
